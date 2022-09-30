@@ -149,7 +149,9 @@ Screen1 As screen:
         ZIndex: =10
 
     Image3 As image:
+        Height: =96
         Image: ='10000-cash'
+        Width: =220
         X: =440
         Y: =600
         ZIndex: =11
