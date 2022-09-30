@@ -1,0 +1,156 @@
+Screen1 As screen:
+
+    MainContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =6
+
+        HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =100
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            Label1 As label:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Center
+                Fill: =RGBA(184, 0, 0, 1)
+                Height: =100
+                Size: =30
+                Text: ="Coca Cola"
+                X: =608
+                Y: =30
+                ZIndex: =1
+
+            Rectangle1 As rectangle:
+                AlignInContainer: =AlignInContainer.Center
+                Fill: =RGBA(184, 0, 0, 1)
+                FillPortions: =1
+                Width: =1366
+                ZIndex: =2
+
+        FormContainer As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            FillPortions: =0
+            Height: =300
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =1340
+            ZIndex: =2
+
+            nameInput As text:
+                AlignInContainer: =AlignInContainer.Center
+                Default: ="name"
+                HintText: ="name"
+                LineHeight: =2
+                X: =510
+                Y: =360
+                ZIndex: =1
+
+            ageInput As text:
+                AlignInContainer: =AlignInContainer.Center
+                Default: ="age"
+                HintText: ="age"
+                LineHeight: =2
+                X: =510
+                Y: =491
+                ZIndex: =2
+
+        SubmitButton As button:
+            AlignInContainer: =AlignInContainer.Center
+            Fill: =RGBA(184, 0, 0, 1)
+            Text: ="Submit"
+            X: =565
+            Y: =728
+            ZIndex: =3
+
+        TextInput1 As text:
+            Default: ="Text input"
+            ZIndex: =4
+
+        Label3 As label:
+            Text: ="Text"
+            ZIndex: =5
+
+        Container3 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            ZIndex: =6
+
+            Label4 As label:
+                Align: =Align.Right
+                AlignInContainer: =AlignInContainer.Start
+                AutoHeight: =true
+                LayoutMinWidth: =10
+                Text: ="name"
+                Width: =100
+                ZIndex: =1
+
+            TextInput2 As text:
+                AlignInContainer: =AlignInContainer.Start
+                Default: ="type you name here!"
+                FillPortions: =1
+                ZIndex: =2
+
+            Label5 As label:
+                Text: ="Text"
+                ZIndex: =3
+
+            TextInput3 As text:
+                Default: ="Text input"
+                ZIndex: =4
+
+    HtmlText1 As htmlViewer:
+        Height: =70
+        HtmlText: |-
+            ="<div style='
+            padding: 25px;
+            font-size: 25px;
+            box-shadow: 5px 5px 8px #999;
+            background: lightblue'
+            <center>
+            </center>
+            </div>"
+        Width: =314
+        X: =660
+        Y: =155
+        ZIndex: =7
+
+    Button1 As button:
+        Text: ="Button"
+        X: =955
+        Y: =425
+        ZIndex: =8
+
+    Image1 As image:
+        Image: |-
+            ="data:image/svg+xml;utf8, "&EncodeUrl("
+            <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-funnel-fill' viewBox='0 0 16 16'>   <path d='M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z'/> </svg>
+            ")
+        OnSelect: =true
+        X: =389
+        Y: =325
+        ZIndex: =9
+
+    Image2 As image:
+        X: =165
+        Y: =305
+        ZIndex: =10
+
+    Image3 As image:
+        Image: ='10000-cash'
+        X: =440
+        Y: =600
+        ZIndex: =11
+
